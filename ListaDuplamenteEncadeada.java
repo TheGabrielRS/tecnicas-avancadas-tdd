@@ -98,6 +98,12 @@ public class ListaDuplamenteEncadeada {
         return false;
     }
 
+    /**
+    * Adiciona um nodo na posição em uma determinada posição
+    * @param    dado    Dado que deve estar dentro do nodo
+    * @param    pos     Posição que o nodo deve ser inserido
+    * @return           Se o elemento foi incluído com sucesso na posição solicitada
+    **/
     public boolean adicionaPosicao(String dado, int pos)
     {
         Nodo atual = inicio;
