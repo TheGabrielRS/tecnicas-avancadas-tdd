@@ -38,6 +38,11 @@ public class ListaDuplamenteEncadeada {
             this.fim = this.inicio;
     }
 
+    /** 
+    * Adiciona um Nodo ao início da lista contendo o valor enviado na string
+    * @param    dado    Informação que será adicionada no início da lista
+    * @return           void
+    */
     public void adicionaInicio(String dado)
     {
         if(this.inicio != null && this.fim != null)
