@@ -59,6 +59,10 @@ public class ListaDuplamenteEncadeada {
             this.fim = this.inicio;
     }
 
+    
+    /**
+    * Realiza um loop na lista para exibir os dados no console
+    **/
     public void mostraLista()
     {
         Nodo atual = inicio;
