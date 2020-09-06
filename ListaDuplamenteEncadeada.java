@@ -76,6 +76,11 @@ public class ListaDuplamenteEncadeada {
         }while(atual != null);
     }
 
+    /**
+    * Busca por um elemento na lista e informa se ele está contido na lista
+    * @param    dado    Conteúdo que será procurado nos elementos da lista 
+    * @return           Se há algum elemento com o conteúdo pesquisado
+    **/
     public boolean buscaElemento(String dado)
     {
         Nodo atual = inicio;
