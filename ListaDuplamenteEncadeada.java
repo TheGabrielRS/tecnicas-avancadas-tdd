@@ -15,6 +15,11 @@ public class ListaDuplamenteEncadeada {
         this.fim = null;
     }
 
+    /** 
+    * Adiciona um Nodo ao fim da lista contendo o valor enviado na string
+    * @param    dado    Informação que será adicionada ao fim da lista
+    * @return           void
+    */
     public void adicionaFim(String dado)
     {
         if(this.inicio != null && this.fim != null)
