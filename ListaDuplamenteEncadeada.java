@@ -15,6 +15,11 @@ public class ListaDuplamenteEncadeada {
         this.fim = null;
     }
 
+    /** 
+    * Adiciona um Nodo ao fim da lista contendo o valor enviado na string
+    * @param    dado    Informação que será adicionada ao fim da lista
+    * @return           void
+    */
     public void adicionaFim(String dado)
     {
         if(this.inicio != null && this.fim != null)
@@ -33,6 +38,11 @@ public class ListaDuplamenteEncadeada {
             this.fim = this.inicio;
     }
 
+    /** 
+    * Adiciona um Nodo ao início da lista contendo o valor enviado na string
+    * @param    dado    Informação que será adicionada no início da lista
+    * @return           void
+    */
     public void adicionaInicio(String dado)
     {
         if(this.inicio != null && this.fim != null)
@@ -49,6 +59,10 @@ public class ListaDuplamenteEncadeada {
             this.fim = this.inicio;
     }
 
+    
+    /**
+    * Realiza um loop na lista para exibir os dados no console
+    **/
     public void mostraLista()
     {
         Nodo atual = inicio;
@@ -62,6 +76,11 @@ public class ListaDuplamenteEncadeada {
         }while(atual != null);
     }
 
+    /**
+    * Busca por um elemento na lista e informa se ele está contido na lista
+    * @param    dado    Conteúdo que será procurado nos elementos da lista 
+    * @return           Se há algum elemento com o conteúdo pesquisado
+    **/
     public boolean buscaElemento(String dado)
     {
         Nodo atual = inicio;
@@ -79,6 +98,12 @@ public class ListaDuplamenteEncadeada {
         return false;
     }
 
+    /**
+    * Adiciona um nodo na posição em uma determinada posição
+    * @param    dado    Dado que deve estar dentro do nodo
+    * @param    pos     Posição que o nodo deve ser inserido
+    * @return           Se o elemento foi incluído com sucesso na posição solicitada
+    **/
     public boolean adicionaPosicao(String dado, int pos)
     {
         Nodo atual = inicio;
@@ -102,6 +127,11 @@ public class ListaDuplamenteEncadeada {
         return false;
     }
 
+    /**
+    * Remove o nodo da posição determinada
+    * @param    pos     Posição do nodo que deve ser removido
+    * @return           Se o elemento foi removido com sucesso da posição solicitada
+    **/
     public boolean removePosicao(int pos)
     {
         Nodo atual = inicio;
