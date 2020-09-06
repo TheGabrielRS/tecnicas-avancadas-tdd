@@ -127,6 +127,11 @@ public class ListaDuplamenteEncadeada {
         return false;
     }
 
+    /**
+    * Remove o nodo da posição determinada
+    * @param    pos     Posição do nodo que deve ser removido
+    * @return           Se o elemento foi removido com sucesso da posição solicitada
+    **/
     public boolean removePosicao(int pos)
     {
         Nodo atual = inicio;
